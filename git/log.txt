@@ -1,0 +1,41 @@
+01.08.25
+gh pr create --base master --head update-config --title "Update config" --body "Changed learning rate and batch size"
+- `--base master` — куда вливаем (целевая ветка)
+- `--head update-config` — из какой ветки
+- `--title`, `--body` — заголовок и описание PR
+
+31.07.25
+Изучаю как разрешать merge conflicts.
+Завис с гитом. Не появляются стрелки конфликта.
+Ага. Сначала словил fast forward, потом запутался в путях.
+Было:
+
+master: A - B - C
+                 \
+feature:          X - Y
+
+Стало:
+
+master, feature: A - B - C - X - Y
+
+Хорошая статья про merge https://habr.com/ru/articles/195674/
+
+
+30.07.25
+- HEAD - тот коммит, над которым сейчас работаем
+- git checkout [hash] - позволяет установить HEAD на нужный коммит
+- HEAD^ - на один коммит ближе к исходному
+- HEAD~4 - на четыре коммита ближе к исходному
+- git branch -f main HEAD~3 - принудительно переместить ветку main на три родителя назад от HEAD
+- git cherry-pick [hash] - в текущую ветку встраивает коммиты [hash]
+- git rebase -i HEAD~2 - позволяет интерактивно перетасовать ветку
+- git commit --amend - позволяет внести изменения в коммит
+
+
+29.07.25
+- git commit - создает новый коммит в текущей ветке
+- git branch [name] - создает новую ветку
+- git checkout [name] - переключает на другую ветку
+- git checkout -b [name] - создать и переключиться на ветку
+- git merge [name] - смерджить текущую ветку в ветку [name]
+
