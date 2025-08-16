@@ -39,3 +39,5 @@ master, feature: A - B - C - X - Y
 - git checkout -b [name] - создать и переключиться на ветку
 - git merge [name] - смерджить текущую ветку в ветку [name]
 
+1
+
