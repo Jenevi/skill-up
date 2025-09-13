@@ -1,0 +1,6 @@
+09.09.25
+На текущий момент знаю:
+describe, info, shape, columns, loc, iloc, groupby, agg, фильтрация, pivot_table, crosstab, rename
+
+Кажется разумным разобрать:
+импорт/экспорт, query, between, SettingWithCopyWarning, transform, merge, concat с контролем ключей и дубликатов, melt, pivot, stack/unstack, .str.lower()/.strip(), str.contains, str.extract (regex), разбиение и очистка, даты и окна: .dt аксессор (год/месяц/день, разности), resample, rolling/expanding, векторизация вместо apply по строкам
